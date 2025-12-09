@@ -13,7 +13,7 @@ warnings.filterwarnings('ignore')
 # --- CONFIGURATION ---
 st.set_page_config(
     page_title="Bengaluru Housing Market Analysis",
-    page_icon="🏠",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -464,14 +464,14 @@ def main():
 
     # --- TAB 1: Market Overview ---
     with tab1:
-        st.header("1️⃣ Market Summary & Price Trends 📊")
+        st.header("1️1. Market Summary & Price Trends 📊")
         plot_kpis(df)
         st.subheader("Price vs. Size Relationship 📏")
         plot_price_vs_sqft(df)
 
     # --- TAB 2: BHK & Area Type Insights ---
     with tab2:
-        st.header("2️⃣ Property Characteristics Insights 🛋️")
+        st.header("2️2. Property Characteristics Insights 🛋️")
         
         st.subheader("Price by BHK and Distribution")
         plot_price_by_bhk(df)
@@ -484,7 +484,7 @@ def main():
 
     # --- TAB 3: Location & Pricing ---
     with tab3:
-        st.header("3️⃣ Location-Based Analysis 🌍")
+        st.header("3️. Location-Based Analysis 🌍")
         
         st.subheader("Top/Bottom 10 Locations by Average Price")
         plot_location_prices(df)
@@ -510,7 +510,7 @@ def main():
 
     # --- TAB 4: Statistical Deep Dive ---
     with tab4:
-        st.header("4️⃣ Advanced Statistical Analysis 🔬")
+        st.header("4️. Advanced Statistical Analysis 🔬")
 
         st.subheader("Correlation Analysis: Which Factors Drive Price? 🔑")
         plot_correlation_heatmap(df)
@@ -535,7 +535,7 @@ def main():
 
     # --- TAB 5: Outlier Analysis ---
     with tab5:
-        st.header("5️⃣ Outlier and Data Quality Analysis 🚨")
+        st.header("5️. Outlier and Data Quality Analysis 🚨")
         
         st.info("The underlying data was cleaned using threshold filtering. This section analyzes remaining potential outliers based on statistical methods.")
 
