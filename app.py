@@ -405,7 +405,7 @@ def main():
     set_styles()
     
     # --- HEADER ---
-    st.title("🏠 Bengaluru Housing Price Analyst 📊")
+    st.title("Bengaluru Housing Price Analyst")
     st.subheader("A World-Class, Interactive Dashboard for Price and Property Analysis")
     st.markdown("---")
 
@@ -464,14 +464,14 @@ def main():
 
     # --- TAB 1: Market Overview ---
     with tab1:
-        st.header("1️1. Market Summary & Price Trends 📊")
+        st.header("1️1. Market Summary & Price Trends")
         plot_kpis(df)
-        st.subheader("Price vs. Size Relationship 📏")
+        st.subheader("Price vs. Size Relationship")
         plot_price_vs_sqft(df)
 
     # --- TAB 2: BHK & Area Type Insights ---
     with tab2:
-        st.header("2️2. Property Characteristics Insights 🛋️")
+        st.header("2️2. Property Characteristics Insights")
         
         st.subheader("Price by BHK and Distribution")
         plot_price_by_bhk(df)
