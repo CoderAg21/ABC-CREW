@@ -455,11 +455,11 @@ def main():
 
     # --- MAIN DASHBOARD LAYOUT (TABS) ---
     tab1, tab2, tab3, tab4, tab5 = st.tabs([
-        "🚀 Market Overview", 
-        "🏠 BHK & Area Type Insights", 
-        "📍 Location & Pricing", 
-        "📈 Statistical Deep Dive", 
-        "🔍 Outlier Analysis"
+        " Market Overview", 
+        " BHK & Area Type Insights", 
+        " Location & Pricing", 
+        " Statistical Deep Dive", 
+        " Outlier Analysis"
     ])
 
     # --- TAB 1: Market Overview ---
